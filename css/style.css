@@ -1,0 +1,95 @@
+body {
+  background: #faf0e6;
+  color: black;
+  font-family: 'Roboto Slab';
+}
+
+nav {
+  border-bottom: 2px solid black;
+  margin-bottom: 10px;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  border-top: 2px solid black;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+table {
+  margin: auto !important;
+}
+
+td {
+  width: 15px;
+  height: 10px;
+  border: 2px solid black;
+  transition: background-color 1s;
+  -webkit-transition: background-color 1s;
+}
+
+#game {
+  text-align: center;
+}
+
+#game a {
+  display: inline-block;
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+  user-select: none;
+  padding: .5em 2em;
+  outline: none;
+  border: 2px solid;
+  border-radius: 1px;
+  transition: 0.2s;
+  margin: 25px;
+  margin-top: 10px;
+}
+
+#game a:hover {
+  background: rgba(255, 255, 255, .2);
+}
+
+#game a:active {
+  background: white;
+}
+
+#parameters * {
+  margin: 0px;
+  padding: 0px;
+}
+
+#game #introductionText, #game #questionText, #game #consequenceText, #game #endGameText, #game #rulesText {
+  border: 2px solid black;
+  border-radius: 25px;
+  max-width: 1000px;
+  padding: 15px 25px;
+  display: none;
+  margin: 15px auto 25px auto;
+}
+
+#game #confirmIntroduction, #game #startGameButton, #game #confirmConsequenceButton, #game #restartGameButton {
+  max-width: 250px;
+  margin: 0 auto;
+  display: none;
+}
+
+#answersButton {
+  margin: 0 auto;
+  display: none;
+}
+
+#answersButton a {
+  margin: 0px 25px;
+}
+
+.greenArrow {
+  color: #00ff00;
+  ;
+}
+
+.redArrow {
+  color: #fa0000;
+}
