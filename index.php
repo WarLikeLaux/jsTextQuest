@@ -20,7 +20,6 @@
 </head>
 
 <body>
-
   <nav class="navbar navbar-expand-lg navbar-ligh">
     <div class="container">
       <div>
@@ -28,7 +27,7 @@
       </div>
       <div>
         <a class="navbar-brand text-dark">
-          <img height="30px" src="https://school.omgpu.ru/pluginfile.php/1/theme_more/smalllogo/1577514190/omgpu-logo.png">
+          <img height="30px" src="img/logo.png">
         </a>
       </div>
     </div>
@@ -77,7 +76,6 @@
       </div>
     </div>
   </footer>
-
   <script src="scripts/main.js"></script>
 
 </body>
