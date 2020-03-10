@@ -23,7 +23,7 @@
   <nav class="navbar navbar-expand-lg navbar-ligh">
     <div class="container">
       <div>
-        <a class="navbar-brand text-dark">Я в профессии</a>
+        <h4>Я в профессии</h1>
       </div>
       <div>
         <a class="navbar-brand text-dark">

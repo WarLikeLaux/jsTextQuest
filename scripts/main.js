@@ -2,13 +2,20 @@ questionNumber = 0; // переменная для хранения номера
 
 var gameObject; // переменная класса Game для парсинга данных для игры
 
-function lowerFirstLetter(string) {
-  return string.charAt(0).toLowerCase() + string.slice(1);
+function upperFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
 function arrayRandElement(arr) {
   var rand = Math.floor(Math.random() * arr.length);
   return arr[rand];
+}
+
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
 }
 
 function refreshParametersTables() {
@@ -126,19 +133,21 @@ $('#confirmConsequenceButton').click(function() {
   var textCount = 0;
   var resultText;
 
+  shuffleArray(gameObject.pretexts);
+
   gameObject.parameters.forEach((item, i) => {
     if (item.value == item.loseValue) {
       if (textCount == 0) {
-        resultText = item.loseText;
+        resultText = upperFirstLetter(item.loseText);
       } else {
-        resultText = resultText + "<br /><br />" + arrayRandElement(gameObject.pretexts) + lowerFirstLetter(item.loseText);
+        resultText = resultText + "<br /><br />" + gameObject.pretexts.pop() + item.loseText;
       }
       textCount += 1;
     } else if (item.value == item.winValue) {
       if (textCount == 0) {
-        resultText = item.winText;
+        resultText = upperFirstLetter(item.winText);
       } else {
-        resultText = resultText + "<br /><br />" + arrayRandElement(gameObject.pretexts) + lowerFirstLetter(item.winText);
+        resultText = resultText + "<br /><br />" + gameObject.pretexts.pop() + item.winText;
       }
       textCount += 1;
     }
