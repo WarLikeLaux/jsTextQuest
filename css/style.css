@@ -8,6 +8,39 @@ body {
   background-blend-mode: darken; */
   color: black;
   font-family: 'Roboto Slab';
+  font-size: 22px;
+}
+
+.logo {
+  height: 75px;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  .logo {
+    height: 45px;
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  .logo {
+    height: 55px;
+  }
 }
 
 nav {
@@ -77,7 +110,7 @@ td {
 }
 
 #game #confirmIntroduction, #game #startGameButton, #game #confirmConsequenceButton, #game #restartGameButton {
-  max-width: 250px;
+  max-width: 300px;
   margin: 0 auto;
   display: none;
 }
