@@ -50,6 +50,8 @@ $('.selectGame a').click(function() {
 
       gameObject = data;
 
+      shuffleArray(gameObject.questions)
+
       selectGameButtons = document.getElementsByClassName("selectGame");
 
       for (var i = 0; i < selectGameButtons.length; i++) {

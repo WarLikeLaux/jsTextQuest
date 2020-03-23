@@ -40,6 +40,7 @@
     <div id="game">
       <div class="selectGame">
         <a>Я учитель</a>
+        <a>Я вожатый</a>
       </div>
 
       <div id="parameters"></div>
